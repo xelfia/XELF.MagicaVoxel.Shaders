@@ -10,11 +10,11 @@ Install the shader by copying the file from the [`shader`](shader) directory in 
 * [blur.txt](shader/blur.txt): Shader file of the Groupable Blur
 
 ### Console Commands
-
 * **xs blur `color group stride` `center weight bias`**
 
-* Empty voxels (color index 0) are grouped into -1.
-* Other valid voxels are grouped into 0+.
+### Notes
+* Empty voxels (color index: `0`) are grouped into `-1`.
+* Other valid voxels (color index: `1`…`255`) are grouped into `0+`.
 
 ### Command Examples
 
