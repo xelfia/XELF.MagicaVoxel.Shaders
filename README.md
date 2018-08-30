@@ -1,8 +1,10 @@
 # 🆇🅴🅻🅵.MagicaVoxel.Shaders
 * Shaders for [MagicaVoxel](https://ephtracy.github.io/)
   * Tested with MagicaVoxel 0.99.1a for Windows
-  * MagicaVoxel shader is a processor of vox model object.
-  
+
+## Basic Informations
+MagicaVoxel shader is a processor of vox model object. Installed MagicaVoxel shader can use from the Console in MagicaVoxel.
+
 ## Installation
 
 Install the shader by copying the file from the [📁`shader`](shader) directory in this project into the 📁`shader` directory of your MagicaVoxel installation.
