@@ -12,7 +12,7 @@ Install the shader by copying the file from the [📁`shader`](shader) directory
 * This will assist you:
   * To make a gradient.
   * To add an antialiasing effect.
-  * To add rounded corner effect.
+  * To add a rounded corner effect.
 * Keeps it shape:
   * Empty voxel to empty voxel
   * Valid voxel to valid voxel
@@ -37,6 +37,8 @@ Install the shader by copying the file from the [📁`shader`](shader) directory
 * **xs blur 256**
   * Palette grasped `256`<sub>tones</sub> × `1`<sub>group</sub>
   * For a grayscale-like palette (255 tone levels + 1 empty)
+* **xs blur 8 4**
+  * a bit large `center weight bias`=`4` will work as an antialiasing effect / a rounded corner effect.
 
 ### Samples
 
