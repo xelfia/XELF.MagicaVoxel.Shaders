@@ -4,15 +4,18 @@
 
 ## Installation
 
-Install the shader by copying the file from the `shader` directory in this project into the `shader` directory of your MagicaVoxel installation.
+Install the shader by copying the file from the [`shader`](shader) directory in this project into the `shader` directory of your MagicaVoxel installation.
 
 ## Groupable Blur
+* [blur.txt](shader/blur.txt): Shader file for the Groupable Blur
 
+### console commands
 * xs blur `color group stride` `center weight bias`
 
 ### Example
 
-* `original`➡🔨`xs blur 8`➡`step 1`➡🔨`xs blur 8`➡`step 2`➡🔨`xs blur 8`➡`step 3`
+* [`blur-sample.vox`](vox/blur-sample.vox): A sample vox file for the Groupable Blur 
+  * `original`➡🔨`xs blur 8`➡`step 1`➡🔨`xs blur 8`➡`step 2`➡🔨`xs blur 8`➡`step 3`
 
 |||
 |---|---|
