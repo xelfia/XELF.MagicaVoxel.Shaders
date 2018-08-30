@@ -26,6 +26,8 @@ Install the shader by copying the file from the [📁`shader`](shader) directory
 
 ### Console Commands
 * **xs blur `color group stride` `center weight bias`**
+** `color group stride`: [1…256] (default: 1)
+** `center weight bias`: [-1…256] (default: 0)
 
 ### Notes
 * Empty voxels (color index: `0`) are grouped into `-1`.
@@ -41,6 +43,8 @@ Install the shader by copying the file from the [📁`shader`](shader) directory
   * For a grayscale-like palette (255 tone levels + 1 empty)
 * **xs blur 8 4**
   * a bit large `center weight bias`=`4` will work as an antialiasing effect / a rounded corner effect.
+* **xs -n 3 blur 8**
+  * In the following sample, by one time run, the original model will become into the result of step 3.
 
 ### Samples
 
