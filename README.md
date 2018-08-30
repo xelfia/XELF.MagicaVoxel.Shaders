@@ -10,9 +10,9 @@ Install the shader by copying the file from the `shader` directory in this proje
 
 * xs blur `color group stride` `center weight bias`
 
-### Example Images
+### Example
 
-`original`➡`xs blur 8`➡`step 1`➡`xs blur 8`➡`step 2`➡`xs blur 8`➡`step 3`
+* `original`➡🔨`xs blur 8`➡`step 1`➡🔨`xs blur 8`➡`step 2`➡🔨`xs blur 8`➡`step 3`
 
 |||
 |---|---|
