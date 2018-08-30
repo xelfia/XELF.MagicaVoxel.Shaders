@@ -13,6 +13,9 @@ Install the shader by copying the file from the [`shader`](shader) directory in 
 
 * **xs blur `color group stride` `center weight bias`**
 
+* Empty voxels (color index 0) are grouped into -1.
+* Other valid voxels are grouped into 0+.
+
 ### Command Examples
 
 * **xs blur 8**
