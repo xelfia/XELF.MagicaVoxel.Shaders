@@ -26,8 +26,8 @@ Install the shader by copying the file from the [📁`shader`](shader) directory
 
 ### Console Commands
 * **xs blur `color group stride` `center weight bias`**
-** `color group stride`: [1…256] (default: 1)
-** `center weight bias`: [-1…256] (default: 0)
+  * `color group stride`: [1…256] (default: 1)
+  * `center weight bias`: [-1…256] (default: 0)
 
 ### Notes
 * Empty voxels (color index: `0`) are grouped into `-1`.
