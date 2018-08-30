@@ -19,7 +19,7 @@ Install the shader by copying the file from the [`shader`](shader) directory in 
 * Palette can group: 
   * Each group will not blur into each other.
   * Colors in same group only will blur.
-* Shader can only access voxels.
+* Shader can only access voxels:
   * Needs preparation of a proper palette you want.
 
 ### Console Commands
