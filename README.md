@@ -1,5 +1,5 @@
 # 🆇🅴🅻🅵.MagicaVoxel.Shaders
-* Shaders for MagicaVoxel
+* Shaders for [MagicaVoxel](https://ephtracy.github.io/)
   * Tested with MagicaVoxel 0.99.1a for Windows
 
 ## Installation
@@ -10,7 +10,8 @@ Install the shader by copying the file from the [`shader`](shader) directory in 
 * [blur.txt](shader/blur.txt): Shader file of the Groupable Blur
 
 ### console commands
-* xs blur `color group stride` `center weight bias`
+
+* **xs blur `color group stride` `center weight bias`**
 
 ### Example
 
