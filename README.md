@@ -1,6 +1,10 @@
 # XELF MagicaVoxel Shaders
 * Shaders for MagicaVoxel
 
+## Installation
+
+Install the shader by copying the file from the `shader` directory in this project into the `shader` directory of your MagicaVoxel installation.
+
 ## Groupable Blur
 
 * xs blur `color group stride` `center weight bias`
