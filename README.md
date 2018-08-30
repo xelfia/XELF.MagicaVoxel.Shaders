@@ -8,7 +8,7 @@
 Install the shader by copying the file from the [`shader`](shader) directory in this project into the `shader` directory of your MagicaVoxel installation.
 
 ## Groupable Blur
-* [blur.txt](shader/blur.txt): Shader file of the Groupable Blur
+* [🗎`blur.txt`](shader/blur.txt): Shader file of the Groupable Blur
 * This will assist you:
   * To make a gradient.
   * To add an antialiasing effect.
@@ -19,6 +19,8 @@ Install the shader by copying the file from the [`shader`](shader) directory in 
 * Palette can group: 
   * Each group will not blur into each other.
   * Colors in same group only will blur.
+* Shader can only access voxels.
+  * Needs preparation of a proper palette you want.
 
 ### Console Commands
 * **xs blur `color group stride` `center weight bias`**
