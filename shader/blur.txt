@@ -1,0 +1,55 @@
+// Groupable Blur version 1.0
+// (C) 2018 XELF
+// https://github.com/xelfia/XELF-MagicaVoxel-Shaders
+// MIT License (MIT)
+
+// console commands
+// xs blur [color_group_stride] [center_weight_bias]
+//   e.g.
+// xs blur 8
+// * Palette grasped [8 (tones)] x [32 (groups)]: Each row on the palette UI is an independent group 
+// xs blur 256
+// * Palette grasped [256 (tones)] x [1 (group)]: for a grayscale-like palette (255 tone levels + 1 empty)
+//
+// * Empty voxels (color index 0) are grouped into -1
+
+bool contains(vec3 v) {
+	return
+		v.x >= 0.0 && v.y >=0.0 && v.z >= 0.0 &&
+		v.x < iVolumeSize.x && v.y < iVolumeSize.y && v.z < iVolumeSize.z;
+}
+float pick(vec3 v, float default_color) {
+	return contains(v) ? voxel(v) : default_color;
+}
+vec4 group(vec4 indices, float stride) {
+	return vec4(
+		floor((indices.x - 0.5) / stride),
+		floor((indices.y - 0.5) / stride),
+		floor((indices.z - 0.5) / stride),
+		floor((indices.w - 0.5) / stride));
+}
+vec4 weight(vec4 a, float b) {
+	return vec4(a.x == b ? 1.0 : 0.0, a.y == b ? 1.0 : 0.0, a.z == b ? 1.0 : 0.0, a.w == b ? 1.0 : 0.0);
+}
+
+float s = clamp(iArgs[0], 1.0, 256.0);
+float centerWeightBias = clamp(iArgs[1], -1.0, 256.0);
+
+float map(vec3 v) {
+	vec4 c0, c1;
+	c0.w = c1.w = pick(v, 0.0);
+	c0.x = pick(v - vec3(1.0, 0.0, 0.0), c0.w);
+	c1.x = pick(v + vec3(1.0, 0.0, 0.0), c0.w);
+	c0.y = pick(v - vec3(0.0, 1.0, 0.0), c0.w);
+	c1.y = pick(v + vec3(0.0, 1.0, 0.0), c0.w);
+	c0.z = pick(v - vec3(0.0, 0.0, 1.0), c0.w);
+	c1.z = pick(v + vec3(0.0, 0.0, 1.0), c0.w);
+	vec4 g0 = group(c0, s);
+	vec4 g1 = group(c1, s);
+	vec4 w0 = weight(g0, g0.w);
+	vec4 w1 = weight(g1, g0.w);
+	w0.w = w0.w != 0.0 ? w0.w + centerWeightBias: w0.w;
+	w1.w = w1.w != 0.0 ? w1.w + centerWeightBias: w1.w;
+	float w = dot(w0 + w1, vec4(1.0, 1.0, 1.0, 1.0));
+	return w == 0.0 ? 0.0 : (dot(w0, c0) + dot(w1, c1)) / w;
+}
