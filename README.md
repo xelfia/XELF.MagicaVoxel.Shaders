@@ -1,11 +1,11 @@
 # XELF MagicaVoxel Shaders
 * Shaders for MagicaVoxel
 
-# Groupable Blur
+## Groupable Blur
 
 * xs blur `color group stride` `center weight bias`
 
-# Example Images
+### Example Images
 
 `original`➡`xs blur 8`➡`step 1`➡`xs blur 8`➡`step 2`➡`xs blur 8`➡`step 3`
 
