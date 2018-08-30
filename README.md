@@ -1,2 +1,4 @@
-# XELF-MagicaVoxel-Shaders
-Shaders for MagicaVoxel
+# XELF MagicaVoxel Shaders
+* Shaders for MagicaVoxel
+
+(placeholder)
