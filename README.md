@@ -9,11 +9,20 @@ Install the shader by copying the file from the [`shader`](shader) directory in 
 ## Groupable Blur
 * [blur.txt](shader/blur.txt): Shader file of the Groupable Blur
 
-### console commands
+### Console Commands
 
 * **xs blur `color group stride` `center weight bias`**
 
-### Example
+### Command Examples
+
+* **xs blur 8**
+  * Palette grasped `8`<sub>tones</sub> × `32`<sub>groups</sub>
+  * Each row on the palette UI is an independent group 
+* **xs blur 256**
+  * Palette grasped `256`<sub>tones</sub> × `1`<sub>group</sub>
+  * For a grayscale-like palette (255 tone levels + 1 empty)
+
+### Samples
 
 * [`blur-sample.vox`](vox/blur-sample.vox): A sample vox file for the Groupable Blur 
   * `original`➡🔨`xs blur 8`➡`step 1`➡🔨`xs blur 8`➡`step 2`➡🔨`xs blur 8`➡`step 3`
