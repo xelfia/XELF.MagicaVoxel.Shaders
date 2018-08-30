@@ -1,4 +1,4 @@
-# XELF MagicaVoxel Shaders
+# 🆇🅴🅻🅵.MagicaVoxel.Shaders
 * Shaders for MagicaVoxel
 
 ## Installation
