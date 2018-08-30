@@ -5,7 +5,7 @@
   
 ## Installation
 
-Install the shader by copying the file from the [`shader`](shader) directory in this project into the `shader` directory of your MagicaVoxel installation.
+Install the shader by copying the file from the [📁`shader`](shader) directory in this project into the 📁`shader` directory of your MagicaVoxel installation.
 
 ## Groupable Blur
 * [🗎`blur.txt`](shader/blur.txt): Shader file of the Groupable Blur
