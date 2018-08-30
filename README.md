@@ -1,5 +1,6 @@
 # 🆇🅴🅻🅵.MagicaVoxel.Shaders
 * Shaders for MagicaVoxel
+  * Tested with MagicaVoxel 0.99.1a for Windows
 
 ## Installation
 
