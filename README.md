@@ -1,13 +1,24 @@
 # 🆇🅴🅻🅵.MagicaVoxel.Shaders
 * Shaders for [MagicaVoxel](https://ephtracy.github.io/)
   * Tested with MagicaVoxel 0.99.1a for Windows
-
+  * MagicaVoxel shader is a processor of vox model object.
+  
 ## Installation
 
 Install the shader by copying the file from the [`shader`](shader) directory in this project into the `shader` directory of your MagicaVoxel installation.
 
 ## Groupable Blur
 * [blur.txt](shader/blur.txt): Shader file of the Groupable Blur
+* This will assist you:
+  * To make a gradient.
+  * To add an antialiasing effect.
+  * To add rounded corner effect.
+* Keeps it shape:
+  * Empty voxel to empty voxel
+  * Valid voxel to valid voxel
+* Palette can group: 
+  * Each group will not blur into each other.
+  * Colors in same group only will blur.
 
 ### Console Commands
 * **xs blur `color group stride` `center weight bias`**
