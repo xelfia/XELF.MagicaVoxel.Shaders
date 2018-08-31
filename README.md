@@ -3,15 +3,14 @@
   * Tested with MagicaVoxel 0.99.1a for Windows
 
 ## Basic Informations
-MagicaVoxel shader is a processor of vox model object. Installed MagicaVoxel shader can use from the Console in MagicaVoxel.
+MagicaVoxel shader is a processor of vox model object. Installed MagicaVoxel shader can be used from the Console in MagicaVoxel.
 
 ## Installation
-
 Install the shader by copying the file from the [📁`shader`](shader) directory in this project into the 📁`shader` directory of your MagicaVoxel installation.
 
 ## Groupable Blur
 * [🗎`blur.txt`](shader/blur.txt): Shader file of the Groupable Blur
-* This will assist you:
+* Will assist you:
   * To make a gradient.
   * To add an antialiasing effect.
   * To add a rounded corner effect.
@@ -42,7 +41,7 @@ Install the shader by copying the file from the [📁`shader`](shader) directory
   * Palette grasped `256`<sub>tones</sub> × `1`<sub>group</sub>
   * For a grayscale-like palette (255 tone levels + 1 empty)
 * **xs blur 8 4**
-  * a bit large `center weight bias`=`4` will work as an antialiasing effect / a rounded corner effect.
+  * A bit large `center weight bias`=`4` will work as an antialiasing effect / a rounded corner effect.
 * **xs -n 3 blur 8**
   * In the following sample, by one time run, the original model will become into the result of step 3.
 
