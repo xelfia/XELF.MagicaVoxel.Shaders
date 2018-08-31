@@ -1,6 +1,6 @@
-// Groupable Blur version 1.0
+// Groupable Blur version 1.0.1
 // (C) 2018 XELF
-// https://github.com/xelfia/XELF-MagicaVoxel-Shaders
+// https://github.com/xelfia/XELF.MagicaVoxel.Shaders
 // MIT License (MIT)
 
 // console commands
